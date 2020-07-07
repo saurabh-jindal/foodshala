@@ -11,7 +11,7 @@ class Food_model extends CI_Model
 	 */
 	/*
 	 * logged In Restaurants ADD Menu Items Model
-	 * I have used static images for now but it can be configured for the website.
+	 * Disclaimer : I have not used the images from database right now. Its model is built for future purposes.
 	 */
 	public function add_menu()
 	{
@@ -133,6 +133,7 @@ class Food_model extends CI_Model
 	}
 	/*
 	 * Returing Food Image for a perticular Food ID
+	 * Disclaimer : I have not used dynamic image for now. It is used for future purposes.
 	 */
 	public function get_food_image($food_id){
 		$query = $this->db->where('id', $food_id);

@@ -3,7 +3,7 @@
 ###### I have tried to make this app secured the XSS Attack
 
 ### Foodshala Structure
-###### To use this website make a database and import foodshala sql file and attach a database
+###### To use this website make a database and import foodshala sql file and configure the database settings in "application/config/database.php".
 
 ###### 1. This website is divided into 3 models (Food, Users, Order).
 ###### 2. These models are controlled by 2 Controllers Users and Foods.
@@ -11,11 +11,11 @@
 ###### 4. Static files are used in "assets" folder to serve static content. 
  
  
-![alt text](image.png)
+![alt text](github_images/image.png)
 
 
-![alt text](image2.png)
+![alt text](github_images/image2.png)
 
 
-![alt text](image3.png)
+![alt text](github_images/image3.png)
 

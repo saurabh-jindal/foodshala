@@ -50,7 +50,7 @@ class Foods extends CI_Controller{
 				print_r('Sorry you do not have proper permissions.');
 			}
 		}else{
-			redirect('user/login');
+			redirect('users/login');
 		}
 	}
 
