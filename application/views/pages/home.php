@@ -6,7 +6,7 @@
                         <div class="dplay-tbl-cell center-text color-white">
 
                                 <h5><b>BEST IN TOWN</b></h5>
-                                <h1 class="mt-30 mb-15">Pizza & Pasta</h1>
+                                <h1 class="mt-30 mb-15">Foods & Beverages</h1>
                         </div><!-- dplay-tbl-cell -->
                 </div><!-- dplay-tbl -->
         </div><!-- container -->
@@ -24,24 +24,23 @@
 
                 <div class="row">
                         <div class="col-md-6">
-                                <p class="mb-30">Maecenas fermentum tortor id fringilla molestie. In hac habitasse
-                                        platea dictumst. Morbi maximus
-                                        lobortis ipsum, ut blandit augue ullamcorper vitae.
-                                        Nulla dignissim leo felis, eget cursus elit aliquet ut. Curabitur vel convallis
-                                        massa. Morbi tellus
-                                        tortor, luctus et lacinia non, tincidunt in lacus.
-                                        Vivamus sed ligula imperdiet, feugiat magna vitae, blandit ex. Vestibulum id
-                                        dapibus dolor, ac
-                                        cursus nulla. </p>
+                                <p class="mb-30">Tom Sellers is the Chef Patron of Restaurant Story. He dreamed of
+									opening Restaurant Story at the age of 19, and in April 2013, aged 26,
+									was able to realise his dream. Tom trained at some of the world’s best
+									restaurants including Restaurant Tom Aikens, Noma and Per Se. His food
+									is predominantly British, using seasonality to lead a menu that invokes
+									memory and brings a narrative to
+									each plate. </p>
                         </div><!-- col-md-6 -->
 
                         <div class="col-md-6">
-                                <p class="mb-30">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea
-                                        dictumst.Morbi maximus lobortis ipsum, ut blandit augue ullamcorper vitae.
-                                        Nulla dignissim leo felis, eget cursus elit aliquet ut. Curabitur vel
-                                        convallismassa. Morbi tellus tortor, luctus et lacinia non, tincidunt in lacus.
-                                        Vivamus sed ligula imperdiet, feugiat magna vitae, blandit ex. Vestibulumidda
-                                        pibus dolor, accursus nulla. </p>
+                                <p class="mb-30">Gary joined Restaurant Story in August 2017.
+									He has over three years experience with working for the Fat Duck Group.
+									His time there nurtured his cooking skills and experience with
+									managing a kitchen of this level.
+									Hailing from the West Country, Gary brings his love of good produce
+									and a lot of energy to the team. His role has now developed to be
+									in charge of all external events and projects for the group. </p>
                         </div><!-- col-md-6 -->
                 </div><!-- row -->
         </div><!-- container -->

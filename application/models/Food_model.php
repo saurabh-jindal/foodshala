@@ -42,6 +42,10 @@ class Food_model extends CI_Model
 			}
 
 		}
+		/*
+		 * To filter out the content for XSS Attack
+		 */
+		$data = $this->security->xss_clean($data);
 		return $this->db->insert('food', $data);
 	}
 
@@ -122,6 +126,18 @@ class Food_model extends CI_Model
 		$result = $this->db->get('food');
 		if($result->num_rows() == 1){
 			return $result->row(0)->price;
+		} else {
+			return false;
+		}
+	}
+	/*
+	 * Returing Food Image for a perticular Food ID
+	 */
+	public function get_food_image($food_id){
+		$query = $this->db->where('id', $food_id);
+		$result = $this->db->get('food');
+		if($result->num_rows() == 1){
+			return $result->row(0)->image;
 		} else {
 			return false;
 		}

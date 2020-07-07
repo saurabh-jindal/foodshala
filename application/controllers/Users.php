@@ -1,7 +1,9 @@
 <?php
 class Users extends CI_Controller{
 
-	//	register normal people
+	/*
+	 * Register Controller for normal people
+	 */
 	public function register(){
 		// Validation of form
 		$this->form_validation->set_rules('name', 'Name', 'required');
@@ -17,11 +19,14 @@ class Users extends CI_Controller{
 		}else{
 			$encrypt_password = md5($this->input->post('password'));
 			$this->User_model->register($encrypt_password);
-//			message send
+		//message send
 			$this->session->set_flashdata('user_registered', 'Congratulations ! You are now registered.');
 			redirect('users/login');
 		}
 	}
+	/*
+	 * Register Controller for Restaurants
+	 */
 	public function register_restaurant(){
 		// Form validation
 		$this->form_validation->set_rules('name', 'Name', 'required');
@@ -43,7 +48,7 @@ class Users extends CI_Controller{
 		}
 	}
 
-//	login controller
+	// Login Controller for both USERS
 	public function login(){
 		$this->form_validation->set_rules('email', 'Email', 'required');
 		$this->form_validation->set_rules('password', 'Password', 'required');
@@ -85,7 +90,10 @@ class Users extends CI_Controller{
 		}
 	}
 
-//	logout controller
+	/*
+	 * Logout Controller
+	 * Clearing all session values
+	 */
 	public function logout(){
 		// unset user data
 		$this->session->unset_userdata('logged_in');

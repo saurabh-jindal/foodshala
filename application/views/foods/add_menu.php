@@ -5,7 +5,7 @@
 			<h2>Add Menu</h2>
 		</div>
 
-		<form action="<?php echo base_url(); ?>foods/add_menu" method="post" class="form-style-1 placeholder-1">
+		<form enctype="multipart/form-data" action="<?php echo base_url(); ?>foods/add_menu" method="post" class="form-style-1 placeholder-1">
 			<div class="row">
 				<div class="col-md-12 col-md-offset-4">
 					<div class="form-group">

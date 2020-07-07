@@ -14,8 +14,6 @@ class User_model extends CI_Model
 	 */
 
 
-
-
 	/*
 	 * Login model providing USER ID for further use
 	 */
@@ -87,6 +85,10 @@ class User_model extends CI_Model
 			'role' => 1,
 			'veg' => $this->input->post('veg'),
 		);
+		/*
+		 * Filter out the content for XSS
+		 */
+		$data = $this->security->xss_clean($data);
 		return $this->db->insert('users', $data);
 	}
 
@@ -101,6 +103,10 @@ class User_model extends CI_Model
 			'password' => $enc_password,
 			'role' => 0,
 		);
+		/*
+		 * Filter out the content for XSS Attack
+		 */
+		$data = $this->security->xss_clean($data);
 		return $this->db->insert('users', $data);
 	}
 
