@@ -11,6 +11,7 @@ class Food_model extends CI_Model
 	 */
 	/*
 	 * logged In Restaurants ADD Menu Items Model
+	 * I have used static images for now but it can be configured for the website.
 	 */
 	public function add_menu()
 	{

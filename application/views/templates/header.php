@@ -21,6 +21,24 @@
 
 <header>
 	<div class="container">
+		<!-- Flash Messages -->
+		<?php if ($this->session->flashdata('user_registered')): ?>
+			<?php echo '<p class="alert alert-success alert-dismissible fade show">'.$this->session->flashdata('user_registered').'</p>'; ?>
+		<?php endif; ?>
+
+		<?php if ($this->session->flashdata('login_failed')): ?>
+			<?php echo '<p class="alert alert-danger alert-dismissible fade show">'.$this->session->flashdata('login_failed').'</p>'; ?>
+		<?php endif; ?>
+
+		<?php if ($this->session->flashdata('food_ordered')): ?>
+			<?php echo '<p class="alert alert-success alert-dismissible fade show">'.$this->session->flashdata('food_ordered').'</p>'; ?>
+		<?php endif; ?>
+
+		<?php if ($this->session->flashdata('added_to_cart')): ?>
+			<?php echo '<p class="alert alert-success alert-dismissible fade show">'.$this->session->flashdata('added_to_cart').'</p>'; ?>
+		<?php endif; ?>
+	</div>
+	<div class="container">
 		<!-- <a class="logo" href="#"><img src="images/logo-white.png" alt="Logo"></a> -->
 		<h2><a class="logo" href="<?php echo base_url(); ?>">Foodshala</a></h2>
 
@@ -62,24 +80,8 @@
 		</ul>
 
 		<div class="clearfix"></div>
+
 	</div><!-- container -->
 </header>
 
-<div class="container">
-	<!-- Flash Messages -->
-	<?php if ($this->session->flashdata('user_registered')): ?>
-	<?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_registered').'</p>'; ?>
-	<?php endif; ?>
 
-	<?php if ($this->session->flashdata('login_failed')): ?>
-	<?php echo '<p class="alert alert-danger">'.$this->session->flashdata('login_failed').'</p>'; ?>
-	<?php endif; ?>
-
-	<?php if ($this->session->flashdata('food_ordered')): ?>
-	<?php echo '<p class="alert alert-success">'.$this->session->flashdata('food_ordered').'</p>'; ?>
-	<?php endif; ?>
-
-	<?php if ($this->session->flashdata('added_to_cart')): ?>
-	<?php echo '<p class="alert alert-success">'.$this->session->flashdata('added_to_cart').'</p>'; ?>
-	<?php endif; ?>
-</div>
