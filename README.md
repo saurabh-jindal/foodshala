@@ -10,4 +10,5 @@
 ###### 3. Then there are views which are used to render all the data.
 ###### 4. Static files are used in "assets" folder to serve static content. 
  
+ 
 ![alt text](image.png)
